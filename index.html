@@ -1,0 +1,12 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Reforge 66</title></head>
+<body style="font-family:-apple-system,system-ui,sans-serif;background:#0f1220;color:#e7e9f3;text-align:center;padding:60px 22px">
+<h2>Returning to Reforge 66...</h2>
+<p><a id="go" style="display:inline-block;background:#f4a340;color:#1a1206;padding:14px 22px;border-radius:14px;font-weight:700;text-decoration:none">Open Reforge 66</a></p>
+<p id="m" style="color:#9aa0b8"></p>
+<script>
+var u="reforge66://whoop"+location.search;
+document.getElementById("go").href=u;
+if(new URLSearchParams(location.search).get("code")){document.getElementById("m").textContent="If the app doesn't open, copy this page's full address and paste it in Reforge 66.";location.href=u;}
+</script>
+</body></html>
